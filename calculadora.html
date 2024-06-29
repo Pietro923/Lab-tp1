@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calculadora.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+</head>
+<body>
+    <h1>CALCULADORA</h1>
+    
+    <form id="calculadoraForm">
+        <label for="method">Método:</label>
+        <select id="method">
+            <option value="GET">Datos grupales</option>
+            <option value="POST">Suma</option>
+            <option value="PUT">Resta</option>
+            <option value="PATCH">Producto</option>
+            <option value="DELETE">Cociente</option>
+            <option value="COPY">Potencia</option>
+            <option value="OPTIONS">Cambio de base</option>
+        </select>
+        <br>
+        <label for="num1">Número 1:</label>
+        <input type="number" id="num1" name="num1" required>
+        <br>
+        <label for="num2">Número 2:</label>
+        <input type="number" id="num2" name="num2" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado" class="hidden"></div>
+    <script src="script.js"></script>
+</body>
+</html>
